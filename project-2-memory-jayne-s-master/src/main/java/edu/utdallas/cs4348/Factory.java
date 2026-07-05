@@ -34,9 +34,7 @@ public class Factory {
      * @return {FirstName}TLB
      */
     public static TLB createTLB() {
-        // TODO: fill in for TestTLB...do after the MemorySystem above
         JayneTLB tlb = new JayneTLB();
-        //return null;
         return tlb;
     }
 }
