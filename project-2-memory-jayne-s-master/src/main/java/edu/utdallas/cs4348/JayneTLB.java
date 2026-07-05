@@ -13,7 +13,6 @@ public class JayneTLB extends TLB{
         }
         if(emptyLoc != -1) {
             entries[emptyLoc] = entry;
-            //entries[emptyLoc].assignToFrame(entry.getFrameNumber());
             entries[emptyLoc].access();
         } else {
             long ptr = Long.MAX_VALUE;
@@ -25,7 +24,6 @@ public class JayneTLB extends TLB{
                 }
             }
             entries[index] = entry;
-            //entries[index].assignToFrame(entry.getFrameNumber());
             entries[index].access();
         }
     }
