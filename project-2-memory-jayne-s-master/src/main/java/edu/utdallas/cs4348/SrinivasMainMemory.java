@@ -34,13 +34,6 @@ public class SrinivasMainMemory extends MainMemory {
             tlb.addEntry(entry);
         }
         lookupInfo.setPhysicalAddress((frameNumber << Util.NUM_BITS_WITHIN_FRAME) | offset);
-
-//        System.out.println("Logical Address: " + logicalAddress);
-//        System.out.println("Page Number: " + pageNumber);
-//        System.out.println("Offset: " + offset);
-//        System.out.println("Frame Number: " + (entry != null ? entry.getFrameNumber() : "Page not found"));
-//        System.out.println("Physical Address: " + ((entry.getFrameNumber() << Util.NUM_BITS_WITHIN_FRAME) | offset));
-
     }
 
     @Override
